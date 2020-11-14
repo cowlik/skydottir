@@ -1,15 +1,27 @@
 {
-  "name": "skydottir",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.0.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+	"name": "skydottir",
+	"version": "0.1.0",
+	"description": "Website designed & developed for Skydottir Productions.",
+	"homepage": "https://github.com/cowlik/skydottir",
+	"author": "Clint Harrison <clint@cowlik.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cowlik/skydottir.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cowlik/skydottir/issues"
+	},
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build && next export",
+		"start": "next start"
+	},
+	"dependencies": {
+		"next": "10.0.1",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"sass": "^1.29.0"
+	}
 }
