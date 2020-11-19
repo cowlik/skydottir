@@ -2,7 +2,9 @@ import styles from './Nav.module.scss';
 import useFetch from 'hooks/useFetch';
 
 const Nav = () => {
-	const { response, error } = useFetch('./content/nav.json');
+	const { response, error } = useFetch(
+		`${process.env.NEXT_PUBLIC_CONTENT_FOLDER}nav.json`
+	);
 
 	return (
 		<nav className={styles.container}>
@@ -25,7 +27,6 @@ export default Nav;
 
 /*
  *  Markdown
- *
  * 
 //import Markdown from 'react-markdown';
 
