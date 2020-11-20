@@ -1,15 +1,44 @@
 import 'styles/globals.scss';
+import Head from 'next/head';
 import Bg from 'components/Bg';
 import Layout from 'components/Layout';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+	faEtsy,
+	faFacebook,
+	faInstagram,
+	faLinkedin,
+	faPatreon,
+	faPinterest,
+	faSpotify,
+	faTwitter,
+	faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-library.add(fab, faEnvelope);
+library.add(
+	faEtsy,
+	faFacebook,
+	faInstagram,
+	faLinkedin,
+	faPatreon,
+	faPinterest,
+	faSpotify,
+	faTwitter,
+	faYoutube,
+	faEnvelope
+);
 
 export default function App({ Component, pageProps }) {
 	return (
 		<>
+			<Head>
+				<link rel='preconnect' href='https://fonts.gstatic.com' />
+				<link
+					rel='stylesheet'
+					href='https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'
+				></link>
+			</Head>
 			<Bg />
 			<Layout>
 				<Component {...pageProps} />
