@@ -1,4 +1,5 @@
 import styles from './Nav.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useFetch from 'hooks/useFetch';
 
 const Nav = () => {
@@ -13,8 +14,14 @@ const Nav = () => {
 				{response &&
 					response.map((item, i) => (
 						<li key={i}>
-							<a href={item.url} target='_blank'>
-								{item.title}
+							<a
+								href={item.url}
+								title={item.title}
+								target='_blank'
+							>
+								<FontAwesomeIcon
+									icon={[item.icon.prefix, item.icon.name]}
+								/>
 							</a>
 						</li>
 					))}

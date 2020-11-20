@@ -1,14 +1,82 @@
 [
 	{
-		"title": "FB",
-		"url": "https://www.facebook.com"
-	},
-	{
 		"title": "Etsy",
-		"url": "https://www.etsy.com"
+		"url": "https://www.etsy.com/shop/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "etsy"
+		}
 	},
 	{
-		"title": "YT",
-		"url": "https://www.youtube.com"
+		"title": "Facebook",
+		"url": "https://www.facebook.com/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "facebook"
+		}
+	},
+	{
+		"title": "LinkedIn",
+		"url": "https://www.linkedin.com/in/alisondahmen/",
+		"icon": {
+			"prefix": "fab",
+			"name": "linkedin"
+		}
+	},
+	{
+		"title": "Twitter",
+		"url": "https://www.twitter.com/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "twitter"
+		}
+	},
+	{
+		"title": "Instagram",
+		"url": "https://www.instagram.com/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "instagram"
+		}
+	},
+	{
+		"title": "Patreon",
+		"url": "http://www.princessofhelp.com/",
+		"icon": {
+			"prefix": "fab",
+			"name": "patreon"
+		}
+	},
+	{
+		"title": "Pinterest",
+		"url": "https://www.pinterest.com/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "pinterest"
+		}
+	},
+	{
+		"title": "Youtube",
+		"url": "https://www.youtube.com/c/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "youtube"
+		}
+	},
+	{
+		"title": "Spotify",
+		"url": "https://open.spotify.com/user/skydottir/",
+		"icon": {
+			"prefix": "fab",
+			"name": "spotify"
+		}
+	},
+	{
+		"title": "Email",
+		"url": "mailto:alisondahmen@gmail.com",
+		"icon": {
+			"prefix": "far",
+			"name": "envelope"
+		}
 	}
 ]

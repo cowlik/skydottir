@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 .container {
 	top: 0;
 	left: 0;
@@ -5,6 +7,20 @@
 
 	ul {
 		padding: 0;
+		color: #666;
+		font-size: 2rem;
 		list-style: none;
+	}
+
+	li {
+		margin-bottom: 0.75rem;
+	}
+
+	a {
+		transition: 0.25s color ease-out;
+
+		&:hover {
+			color: $skydottir-red;
+		}
 	}
 }
