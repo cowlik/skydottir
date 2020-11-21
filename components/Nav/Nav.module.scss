@@ -1,11 +1,14 @@
 @import 'styles/variables';
 
 .container {
+	margin-top: 80px;
+	padding-top: $spacing-min;
 	top: 0;
 	left: 0;
 	position: sticky;
 
 	ul {
+		margin: 0;
 		padding: 0;
 		color: #666;
 		font-size: 2rem;
@@ -21,6 +24,15 @@
 
 		&:hover {
 			color: $skydottir-red;
+		}
+	}
+
+	@media only screen and (min-width: $screen-med) {
+		margin-top: 110px;
+		padding-top: $spacing-max;
+
+		ul {
+			font-size: 2.5rem;
 		}
 	}
 }

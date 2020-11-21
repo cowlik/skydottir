@@ -1,13 +1,20 @@
 @import 'variables';
+@import 'containers';
+@import 'headings';
 
 html,
 body {
 	min-width: $screen-min;
 	padding: 0;
 	margin: 0;
+	color: #333;
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	position: relative;
 	text-align: center;
+}
+
+p {
+	margin: 0;
 }
 
 a {
@@ -17,4 +24,9 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+main {
+	background-color: #fff;
+	flex: 1 0 auto;
 }
