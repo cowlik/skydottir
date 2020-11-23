@@ -21,7 +21,6 @@
 
 	img {
 		width: 100%;
-		max-width: 405px;
 		height: auto;
 		position: relative;
 		z-index: 1;
@@ -35,11 +34,21 @@
 
 	@media only screen and (min-width: $screen-med) {
 		&:after {
-			height: 200px;
+			height: 225px;
 		}
 
 		img {
-			width: 100%;
+			width: 435px;
+		}
+	}
+
+	@media only screen and (min-width: $screen-lrg) {
+		&:after {
+			height: 275px;
+		}
+
+		img {
+			width: 500px;
 		}
 	}
 }
