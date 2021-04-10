@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'containers';
 @import 'headings';
 
 html,
@@ -9,6 +8,7 @@ body {
 	margin: 0;
 	color: #333;
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-size: 1rem;
 	position: relative;
 	text-align: center;
 }
@@ -27,6 +27,27 @@ a {
 }
 
 main {
+	padding-top: $spacing-min;
 	background-color: #fff;
 	flex: 1 0 auto;
+
+	@media only screen and (min-width: $screen-med) {
+		padding-top: $spacing-max;
+	}
+}
+
+hr {
+	height: 1px;
+	margin: $spacing-max $spacing-min;
+	background-color: $skydottir-red;
+	border: 0;
+
+	@media only screen and (min-width: $screen-med) {
+		margin: ($spacing-max * 2) $spacing-max;
+	}
+
+	@media only screen and (min-width: $screen-lrg) {
+		margin-right: $spacing-max * 2;
+		margin-left: $spacing-max * 2;
+	}
 }

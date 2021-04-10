@@ -1,9 +1,7 @@
 import styles from './Footer.module.scss';
 
 const Footer = () => {
-	return (
-		<footer className={`container ${styles.container}`}>&copy; 2020</footer>
-	);
+	return <footer className={styles.container}>&copy;{new Date().getFullYear()}</footer>;
 };
 
 export default Footer;

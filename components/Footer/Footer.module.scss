@@ -2,6 +2,7 @@
 
 .container {
 	width: 100%;
+	padding: $spacing-min;
 	background-color: $skydottir-red;
 	color: #fff;
 	font-family: 'Fjalla One', sans-serif;
@@ -9,8 +10,7 @@
 	text-align: left;
 
 	@media only screen and (min-width: $screen-med) {
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
+		padding: 1.5rem $spacing-max 1.5rem $spacing-max;
 		font-size: 1rem;
 	}
 }
