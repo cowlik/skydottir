@@ -1,15 +1,10 @@
 @import 'styles/variables';
 
 .container {
-	padding-top: $spacing-max;
+	padding-top: $spacing-min;
 
 	header {
-		background-image: linear-gradient(#fff 30%, #eee 0%, #eee 70%);
-
-		img {
-			width: 200px;
-			height: auto;
-		}
+		background-image: linear-gradient(#fff 68%, #eee 0%, #eee 32%);
 	}
 
 	article {
@@ -27,15 +22,8 @@
 	@media only screen and (min-width: $screen-med) {
 		font-size: 1.25rem;
 
-		header {
-			img {
-				width: 256px;
-			}
-		}
-
 		article {
-			padding-right: $spacing-max * 2;
-			padding-left: $spacing-max * 2;
+			padding: $spacing-max ($spacing-max * 2);
 		}
 
 		footer {
@@ -46,12 +34,6 @@
 	@media only screen and (min-width: $screen-lrg) {
 		font-size: 1.375rem;
 
-		header {
-			img {
-				width: 325px;
-			}
-		}
-
 		article {
 			padding: $spacing-max ($spacing-max * 3);
 		}
@@ -59,5 +41,18 @@
 		footer {
 			padding-bottom: $spacing-max * 3;
 		}
+	}
+}
+
+.logo {
+	width: 230px;
+	height: auto;
+
+	@media only screen and (min-width: $screen-med) {
+		width: 350px;
+	}
+
+	@media only screen and (min-width: $screen-lrg) {
+		width: 400px;
 	}
 }

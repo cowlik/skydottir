@@ -1,8 +1,9 @@
+@use 'sass:math';
 @import 'styles/variables';
 
 .container {
 	margin-top: 80px;
-	padding-top: $spacing-min + $spacing-min / 2;
+	padding-top: $spacing-min + math.div($spacing-min, 2);
 	top: 0;
 	left: 0;
 	position: sticky;

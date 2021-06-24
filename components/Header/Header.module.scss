@@ -1,38 +1,37 @@
 @import 'styles/variables';
 
 .container {
+	padding: 0 $spacing-min;
 	background-image: linear-gradient(transparent 40%, #fff 0%, #fff 60%);
 
 	a {
 		display: inline-block;
 	}
 
-	img {
-		width: 100%;
-		height: auto;
-		position: relative;
-		z-index: 1;
-	}
-
-	@media only screen and (min-width: 375px) {
-		img {
-			width: 250px;
-		}
-	}
-
 	@media only screen and (min-width: $screen-med) {
 		background-image: linear-gradient(transparent 42%, #fff 0%, #fff 58%);
-
-		img {
-			width: 435px;
-		}
 	}
 
 	@media only screen and (min-width: $screen-lrg) {
-		background-image: linear-gradient(transparent 37%, #fff 0%, #fff 63%);
+		background-image: linear-gradient(transparent 35%, #fff 0%, #fff 65%);
+	}
+}
 
-		img {
-			width: 500px;
-		}
+.logo {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+
+	@media only screen and (min-width: 452px) {
+		width: 317px;
+	}
+
+	@media only screen and (min-width: $screen-med) {
+		width: 450px;
+	}
+
+	@media only screen and (min-width: $screen-lrg) {
+		width: 530px;
 	}
 }

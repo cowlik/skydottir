@@ -1,10 +1,13 @@
 import styles from './Button.module.scss';
+import Link from 'next/link';
 
 const Button = (props) => {
 	return (
-		<a className={styles.container} href={props.cta.link} target='_blank'>
-			{props.cta.text}
-		</a>
+		<Link href={props.cta.link}>
+			<a className={`${styles.container} ${props.color ? styles[props.color] : ''}`} target={props.target}>
+				{props.cta.text}
+			</a>
+		</Link>
 	);
 };
 

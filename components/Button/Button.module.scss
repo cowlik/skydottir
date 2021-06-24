@@ -1,10 +1,12 @@
+@use 'sass:math';
 @import 'styles/variables';
 
 .container {
 	line-height: 2rem;
-	padding: 3px ($spacing-max + $spacing-min / 3) 0 $spacing-min;
-	background-color: #444;
-	color: #fff;
+	padding: 3px ($spacing-max + math.div($spacing-min, 3)) 0 $spacing-min;
+	background-color: #fff;
+	border: 2px solid #aaa;
+	color: #333;
 	display: inline-block;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 1rem;
@@ -12,15 +14,15 @@
 	text-transform: uppercase;
 
 	&::after {
-		width: 22px;
-		height: 44px;
-		background-color: $skydottir-blue;
+		width: 23px;
+		height: 46px;
+		background-color: $skydottir-red;
 		content: '';
 		mask: url(./bolt.svg);
 		mask-repeat: no-repeat;
 		mask-size: contain;
-		top: -4px;
-		right: $spacing-min / 2;
+		top: -5px;
+		right: 7px;
 		position: absolute;
 		transition: 0.12s transform ease-in;
 	}
@@ -32,15 +34,22 @@
 	}
 
 	@media only screen and (min-width: $screen-med) {
+		border-width: 4px;
 		line-height: 38px;
-		padding: 3px ($spacing-max + $spacing-min) 0 ($spacing-min + $spacing-min / 2);
+		padding: 3px ($spacing-max + $spacing-min) 0 ($spacing-min + math.div($spacing-min, 2));
 		font-size: 1.2rem;
 
 		&::after {
-			width: 26px;
-			height: 52px;
-			top: -5px;
-			right: 12px;
+			width: 29px;
+			height: 58px;
+			top: -8px;
+			right: 8px;
 		}
+	}
+}
+
+.blue {
+	&::after {
+		background-color: $skydottir-blue;
 	}
 }

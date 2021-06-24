@@ -27,12 +27,12 @@ a {
 }
 
 main {
-	padding-top: $spacing-min;
+	padding-top: $spacing-max;
 	background-color: #fff;
 	flex: 1 0 auto;
 
 	@media only screen and (min-width: $screen-med) {
-		padding-top: $spacing-max;
+		padding-top: $spacing-max + $spacing-min;
 	}
 }
 
